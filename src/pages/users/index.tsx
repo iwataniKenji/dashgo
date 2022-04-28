@@ -16,7 +16,7 @@ import {
   Spinner,
   Link,
 } from "@chakra-ui/react";
-import { GetServerSideProps } from 'next';
+// import { GetServerSideProps } from 'next';
 import NextLink from "next/link";
 import { useState } from "react";
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
@@ -153,12 +153,12 @@ export default function UsersList({ users }) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const { users, totalCount } = await getUsers(1);
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   const { users, totalCount } = await getUsers(1);
 
-  return {
-    props: {
-      users,
-    },
-  };
-};
+//   return {
+//     props: {
+//       users,
+//     },
+//   };
+// };

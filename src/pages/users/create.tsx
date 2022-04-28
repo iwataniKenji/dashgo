@@ -55,7 +55,7 @@ export default function CreateUser() {
       return response.data.user;
     },
     {
-      onSucess: () => {
+      onSuccess: () => {
         // invalida cache das queries
         queryClient.invalidateQueries("users");
       },
